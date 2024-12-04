@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 # Predefined list of non-vegetarian ingredients (in German)
 non_veg_ingredients = [
-    "Fleisch", "Huhn", "Rind", "Schwein", "Fisch", "Gelatine", "Speck", "Lamm",                   "Kollagenhydrolysat", "Krabben"
+    "Fleisch", "Huhn", "Rind", "Schwein", "Fisch", "Gelatine", "Speck", "Lamm", "Kollagenhydrolysat", "Krabben"
 ]
 
 # Phrase indicating ambiguous items
