@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Result</title>
+</head>
+<body>
+    <h1>Verification Result</h1>
+    <p>{{ result|safe }}</p>
+    <h3>Detected Text:</h3>
+    <pre>{{ text }}</pre>
+    <form action="/submit_review" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required><br><br>
+        <label for="comment">Comment:</label>
+        <textarea name="comment" id="comment" required></textarea><br><br>
+        <label for="rating">Star Rating (1-5):</label>
+        <input type="number" name="rating" id="rating" min="1" max="5" required><br><br>
+        <button type="submit">Submit Review</button>
+    </form>
+</body>
+</html>
